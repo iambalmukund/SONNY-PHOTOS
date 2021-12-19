@@ -474,18 +474,6 @@ section{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* media queries  */
 
 @media(max-width:991px){
@@ -503,7 +491,6 @@ section{
     }
 
 }
-
 @media(max-width:768px){
 
     .heading{
@@ -780,3 +767,24 @@ section{
     width: 100%;
   }
 }
+@media(max-width:600px){
+    .video-container .video{
+      width: 100%;
+    }
+}
+ @media (max-width: 1000px) {
+    .video-container .video{
+      width: calc(100% / 3);
+    }
+  }
+  @media (max-width: 800px) {
+    .video-container .video{
+      width: calc(100% / 2);
+    }
+  }
+  @media (max-width: 700px) {
+    .video-container .video{
+      max-width: 600px;
+      height: 19rem;
+    }
+  }
