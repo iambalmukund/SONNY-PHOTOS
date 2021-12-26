@@ -96,14 +96,19 @@ function preview(element) {
 //contact Form
 function sendMail(parmas) {
     var tempParams = {
-        from_name: document.getElementById("fromName").value,
-        email: document.getElementById("fromEmail").value,
-        phone: document.getElementById("fromPhone").value,
+        from_name: document.getElementById("fromname").value,
+        email: document.getElementById("fromemail").value,
+        phone: document.getElementById("fromphone").value,
         msg: document.getElementById("msg").value,
     };
 
-    emailjs.send('service_4yr08cm', 'template_ae4gdnm', tempParams)
+    emailjs.send('service_9yzmdt8', 'template_bgwelvn', tempParams)
         .then(function (res) {
             console.log('Success', res.status);
         })
 }
+//alert
+// function sendMail() {
+//     alert("Thanks!",
+//         "We will get in touch to you within 2 bussiness days!");
+// }
